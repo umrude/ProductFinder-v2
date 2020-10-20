@@ -1,0 +1,350 @@
+@import "media-queries.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+//root
+#root {
+  background-image: url(https://rc4wireless.com/wp-content/uploads/2019/10/shine-copy-2.png),
+    linear-gradient(270deg, #006f79 0%, #289850 100%) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+//app wrapper
+#renderChild {
+  width: 90%;
+  @include lt-sm {
+    width: 100%;
+  }
+}
+
+// back and restart buttons
+.controlButtons {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  button:first-of-type {
+    margin: 0 10px;
+  }
+  button {
+    background-color: #cfcfcf;
+    font-family: "Montserrat", sans-serif !important;
+  }
+}
+// first question
+.start {
+  .buttons {
+    justify-content: center !important;
+  }
+}
+
+// default-img card
+.default-img {
+  background-color: #f3f3f3 !important;
+  text-align: center;
+  width: 80%;
+  max-width: 875px;
+  margin: 0 auto;
+
+  .image-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .img,
+    button {
+      margin-top: 20px;
+    }
+  }
+}
+
+// default-img for only 2 products
+.prod2 {
+  .image-section {
+    button {
+      width: 48% !important;
+    }
+  }
+}
+
+// Default Card Styling
+.default {
+  background-color: #f3f3f3 !important;
+  text-align: center;
+  width: 80%;
+  max-width: 1124px;
+  margin: 0 auto;
+  height: 100%;
+  .MuiCardContent-root {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .MuiPaper-elevation1 {
+    box-shadow: none;
+  }
+  .MuiTypography-h5 {
+    margin-bottom: 20px;
+  }
+  .MuiTypography-body2 {
+    margin-bottom: 20px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif !important;
+
+    @include lt-md {
+      flex-direction: column;
+    }
+  }
+  button {
+    background-color: #cfcfcf;
+  }
+  .subheading {
+    margin: 20px 0;
+  }
+}
+
+//default card but has sidebar
+.hasSidebar {
+  display: flex;
+  justify-content: space-between;
+  @include lt-md {
+    flex-wrap: wrap;
+  }
+  & .sideBar {
+    width: 25%;
+    height: 100%;
+    p {
+      font-family: "Montserrat", sans-serif !important;
+    }
+    @include lt-sm {
+      width: 90% !important;
+    }
+    @include lt-md {
+      width: 75%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+    & .MuiPaper-root {
+      height: 100%;
+      padding: 4.5%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      & .sidebarText {
+        padding-bottom: 10px;
+        font-weight: 500;
+      }
+      @include lt-md {
+        padding-top: 10px;
+      }
+    }
+    .buttons .buttons-context button {
+      @include lt-md {
+        padding-bottom: 14px;
+      }
+    }
+  }
+  & .default-img {
+    width: 74% !important;
+    max-width: none !important;
+    @include lt-sm {
+      width: 90% !important;
+    }
+  }
+
+  & .product {
+    width: 74% !important;
+    max-width: none;
+    @include lt-sm {
+      width: 90% !important;
+    }
+
+    img {
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+  & .default .MuiCardContent-root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  & .default {
+    width: 74%;
+    max-width: none;
+    @include lt-sm {
+      width: 90% !important;
+    }
+  }
+  & .buttons-context {
+    @include lt-md {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+//when question has 2 buttons with further context than yes and no
+.two-button-context {
+  .buttons {
+    align-items: center;
+
+    @include lt-md {
+      flex-direction: column;
+    }
+  }
+
+  & .buttons-context {
+    width: 48% !important;
+    @include lt-md {
+      margin-bottom: 20px;
+      width: 100% !important;
+    }
+    & .MuiButton-label {
+      line-height: 35px;
+      @include lt-sm {
+        line-height: 25px;
+      }
+      & .MuiTypography-root {
+        line-height: 20px;
+      }
+    }
+
+    & button {
+      margin: 0 auto;
+      display: inline;
+      font-family: "Montserrat", sans-serif !important;
+    }
+  }
+  .MuiCardContent-root {
+    height: 100%;
+    justify-content: center;
+  }
+}
+
+// end product component
+.product {
+  background-color: #1f3138 !important;
+  text-align: center;
+  width: 80%;
+  max-width: 875px;
+  margin: 0 auto;
+
+  .subhead {
+    margin-bottom: 20px !important;
+    color: white;
+  }
+
+  .MuiCardContent-root {
+    width: 90%;
+    margin: 0 auto;
+  }
+  img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+  & .all-prods {
+    display: flex;
+    justify-content: space-between;
+    img {
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+    }
+    & .muli-prod {
+      width: 100%;
+    }
+  }
+  .MuiTypography-h3,
+  h3 {
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif !important;
+    color: white;
+    @include lt-sm {
+      font-size: 23px;
+    }
+  }
+  .MuiTypography-h4,
+  h4 {
+    color: white;
+    font-family: "Montserrat", sans-serif !important;
+    @include lt-sm {
+      font-size: 18px;
+    }
+  }
+}
+
+//when question has 2 buttons no context (yes/no)
+.yesno {
+  & .buttons {
+    max-width: 20%;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif !important;
+
+    @include lt-md {
+      flex-direction: row;
+      max-width: 50%;
+    }
+  }
+}
+
+.all-prods {
+  display: flex;
+  justify-content: space-between;
+  img {
+    min-height: 340px;
+    margin-top: 20px;
+  }
+  & .muli-prod {
+    width: 48%;
+  }
+}
+
+//single button like "next"
+.single {
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-family: "Montserrat", sans-serif !important;
+  }
+}
+
+.fix {
+  @include lt-md {
+    padding-top: 40px;
+  }
+}
+
+button:hover,
+.learn-more:hover,
+.MuiButton-text:hover {
+  background-color: #2da344 !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+button,
+.MuiButton-text {
+  background-color: #cfcfcf !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+.learn-more {
+  background-color: #cfcfcf !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.MuiCardActionArea-root:hover,
+.Mui-focusVisible {
+  background-color: #cfcfcf;
+}
