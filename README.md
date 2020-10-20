@@ -1,24 +1,24 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# To Run In Development
-
-In your terminal, run `npm i` then `npm start`, webpack takes care of everything else. You will need npm version 5.2+ and above. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-# To Run In Production or Build Version
+## To Run In Production/Build Version
 
 In your terminal, run `npm i` or `npm install`. You will need npm version 5.2+ and Node.js 0.10 or above. After installing, run `node server.js` and open [http://localhost:8080](http://localhost:8080)
+
+This serves files from `/build`. Do not edit code within here. If you need to make changes, make your changes in the `/src` directory and then run `npm run build` again.
+
+`npm run build` is used for final deployment in production. All development must be in `/src`.
+
+## To Run In Development
+
+In your terminal, run `npm i` or `npm install`. You will need npm version 5.2+ and Node.js 0.10 or above. After installing, run `npm start` and open [http://localhost:3000](http://localhost:3000)
+
+Webpack will handle the rest (You can see this code in the folder `/scripts`).
+
+When making changes, the page will reload and save. CSS/SASS/SCSS all gets compiled automatically by `create-react-app`.
 
 ## Available Scripts
 
 In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
 ### `npm test`
 
