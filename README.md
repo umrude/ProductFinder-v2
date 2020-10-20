@@ -4,9 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In your terminal, run `npm i` or `npm install`. You will need npm version 5.2+ and Node.js 0.10 or above. After installing, run `node server.js` and open [http://localhost:8080](http://localhost:8080)
 
-This serves files from `/build`. Do not edit code within here. If you need to make changes, make your changes in the `/src` directory and then run `npm run build` again.
+### **`npm run build ` is used for final deployment in production. All development must be in `/src`.**
 
-`npm run build` is used for final deployment in production. All development must be in `/src`.
+This serves files from `/build`. Do not edit code within here. If you need to make changes, make your changes in the `/src` directory and then run `npm run build` again.
 
 ## To Run In Development
 
