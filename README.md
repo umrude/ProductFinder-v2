@@ -1,8 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## To Start
+# To Run In Development
 
-Run `npm i` then `npm start`, webpack takes care of everything else. You will need npm version 5.2+ and above.
+In your terminal, run `npm i` then `npm start`, webpack takes care of everything else. You will need npm version 5.2+ and above. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+# To Run In Production or Build Version
+
+In your terminal, run `npm i` or `npm install`. You will need npm version 5.2+ and Node.js 0.10 or above. After installing, run `node server.js` and open [http://localhost:8080](http://localhost:8080)
 
 ## Available Scripts
 
