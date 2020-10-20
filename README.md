@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## To run static HTML Version
+
+In the folder `/build`, open the file `index.html` in your browser.
+
 ## To Run In Production/Build/Compiled Version
 
 In your terminal, run `npm i` or `npm install`. You will need npm version 5.2+ and Node.js 0.10 or above. After installing, run `node server.js` and open [http://localhost:8080](http://localhost:8080)
