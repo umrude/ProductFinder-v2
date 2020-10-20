@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## To Run In Production/Build Version
+## To Run In Production/Build/Compiled Version
 
 In your terminal, run `npm i` or `npm install`. You will need npm version 5.2+ and Node.js 0.10 or above. After installing, run `node server.js` and open [http://localhost:8080](http://localhost:8080)
 

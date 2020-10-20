@@ -57,7 +57,9 @@ Thumbs.db
 /coverage
 
 # production
-
+/build
+/ProductFinder/build
+build
 
 # misc
 .DS_Store
