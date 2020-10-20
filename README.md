@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## To Start
+
+Run `npm i` then `npm start`, webpack takes care of everything else. You will need npm version 5.2+ and above.
+
 ## Available Scripts
 
 In the project directory, you can run:
