@@ -21,16 +21,13 @@ const App = () => {
   const [mapSelections, setMapSelections] = useState(""); // Pass down to renderObject
   let current;
   let route;
-  console.log(process.env.NODE_ENV);
 
   if (!process.env.NODE_ENV || process.env.NODE_ENV === "development") {
     // dev code
-    route =
-      "https://cors-anywhere.herokuapp.com/https://json.extendsclass.com/bin/f5ce6e8bd64c";
+    route = "https://api.npoint.io/9253e63511e7f68dec5f";
   } else {
     // production code
-    route =
-      "https://cors-anywhere.herokuapp.com/https://json.extendsclass.com/bin/f5ce6e8bd64c";
+    route = "https://api.npoint.io/9253e63511e7f68dec5f";
   }
 
   useEffect(() => {
@@ -70,7 +67,6 @@ const App = () => {
 
   if (loaded) {
     // only call if load === true
-    console.log(previousSelections);
     if (previousSelections.length === 1) {
       current = renderObject(
         //if only 1 item in array, load root node
