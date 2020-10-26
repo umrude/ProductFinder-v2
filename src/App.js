@@ -10,10 +10,12 @@ import { start } from "./dataPaths/root";
 
 const App = () => {
   const [depthLevel, setDepthLevel] = useState(0); //How far in nesting they've gone
-  const [previousSelections, setPreviousSelections] = useState([start]); //Holds all previous selections for going back
+  // const [previousSelections, setPreviousSelections] = useState([start]); //Holds all previous selections for going back
   // uncomment to use API data instead (comment out the line above)
-  // const [previousSelections, setPreviousSelections] = useState([]);
+  const [previousSelections, setPreviousSelections] = useState([]);
   const [content, setContent] = useState(""); // Tooltip for map
+
+  //change to true if using non API
   const [loaded, setLoaded] = useState(false); //useEffect only works when this state is changed
   const [data, setData] = useState(); // used so there is only one API request, called by Control Buttons to restart
   const [mapSelections, setMapSelections] = useState(""); // Pass down to renderObject
