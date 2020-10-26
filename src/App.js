@@ -20,13 +20,30 @@ const App = () => {
   const [data, setData] = useState(); // used so there is only one API request, called by Control Buttons to restart
   const [mapSelections, setMapSelections] = useState(""); // Pass down to renderObject
   let current;
+  let route;
+  console.log(process.env.NODE_ENV);
+
+  if (!process.env.NODE_ENV || process.env.NODE_ENV === "development") {
+    // dev code
+    route =
+      "https://cors-anywhere.herokuapp.com/https://json.extendsclass.com/bin/f5ce6e8bd64c";
+  } else {
+    // production code
+    route =
+      "https://cors-anywhere.herokuapp.com/https://json.extendsclass.com/bin/f5ce6e8bd64c";
+  }
 
   useEffect(() => {
     axios
-      .get("/ABDR", {
+      .get(route, {
         // make request to API
         headers: {
           "Access-Control-Allow-Origin": "*",
+
+          "Access-Control-Allow-Methods":
+            "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+          "Access-Control-Allow-Headers":
+            "X-Requested-With, content-type, Authorization",
         },
       })
       .then((response) => {
@@ -53,6 +70,7 @@ const App = () => {
 
   if (loaded) {
     // only call if load === true
+    console.log(previousSelections);
     if (previousSelections.length === 1) {
       current = renderObject(
         //if only 1 item in array, load root node

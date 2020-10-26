@@ -125,36 +125,14 @@ const start = {
                           children: [
                             {
                               buttonName: "No",
-                              question:
-                                "Will this be used indoors or Outdoors for installation?",
                               id: "n4-1",
-                              type: "default",
-                              styleClass: "default yesno",
-                              children: [
-                                {
-                                  buttonName: "Indoor",
-                                  id: "n5-1",
-                                  productName: "RC5-EASS",
-                                  styleClass: "product",
-                                  type: "end",
-                                  img:
-                                    "https://rc4wireless.com/wp-content/uploads/2020/04/RC5_DMXio_02.jpg",
-                                  link:
-                                    "https://rc4wireless.com/product-category/rc5_eass/",
-                                },
-                                {
-                                  buttonName: "Outdoor",
-                                  id: "n5-2",
-                                  type: "end",
-                                  styleClass: "product",
-                                  productName:
-                                    "RC5 (EASS) IP67 Outdoor Data Transceiver",
-                                  img:
-                                    "https://rc4wireless.com/wp-content/uploads/2020/04/RC5_DMXioOutdoor_10.jpg",
-                                  link:
-                                    "https://rc4wireless.com/product-category/rc4magic-900mhz/",
-                                },
-                              ],
+                              styleClass: "product",
+                              type: "end",
+                              img:
+                                "https://rc4wireless.com/wp-content/uploads/2020/04/RC5_DMXio_02.jpg",
+                              productName: "RC4Magic-900SX",
+                              link:
+                                "https://rc4wireless.com/product-category/rc5_eass/",
                             },
                             {
                               buttonName: "Yes",
@@ -164,8 +142,8 @@ const start = {
                               subheading:
                                 "An RC4Magic-900 Starter Kit is perfect for you! It solves every kind of wireless dimming challenge, is fully expandable, and is covered by the RC4Magic Comprehensive Warranty.",
                               img:
-                                "https://rc4wireless.com/wp-content/uploads/2020/04/RC4Magic900_Ten_Channel_10-1280x854.jpg",
-                              productName: "RC4Magic-900SX",
+                                "https://rc4wireless.com/wp-content/uploads/2020/04/RC4Magic900_Ten_Channel_10.jpg",
+                              productName: "RC5-EASS",
                               link:
                                 "https://rc4wireless.com/product-category/rc4magic-900mhz/",
                             },
